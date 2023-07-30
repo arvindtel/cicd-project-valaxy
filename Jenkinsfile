@@ -95,6 +95,15 @@ environment {
             }
         }
     }
+
+                stage (" deploy to cluster "){
+        steps {
+            script {
+                sh './deploy.sh' 
+            }
+        }
+    }
+
   }
 }
     

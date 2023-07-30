@@ -99,6 +99,7 @@ environment {
                 stage (" deploy to cluster "){
         steps {
             script {
+                sh 'chmod +x deploy.sh'
                 sh './deploy.sh' 
             }
         }
